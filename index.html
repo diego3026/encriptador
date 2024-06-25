@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Diego Oñate">
+    <link rel="stylesheet" href="main.css">
+    <title>Encriptador</title>
+    <script src="https://kit.fontawesome.com/80ca2c1d88.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <img class="header__imagen" src="assets/Logo.png" alt="Alura">
+    </header>
+    <div class="contenedor">
+        <section class="encriptador">
+            <textarea class="encriptador__texto" placeholder="Ingresa el texto aqui" id=""></textarea>
+            <div class="encriptador__botones">
+                <div class="minusculas">
+                    <div class="contenedor__icono">
+                        <i class="fa-solid fa-exclamation fa-2xs minusculas__icono"></i>
+                    </div>
+                    <p class="minusculas__info">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="botones">
+                    <input class="boton" type="button" value="Encriptar">
+                    <input class="boton btn--active" type="button" value="Desencriptar">
+                </div>
+            </div>
+        </section>
+        <aside class="mensajes">
+            <img class="mensajes__imagen" src="assets/Muñeco.png" alt="">
+            <div class="mensajes__info">
+                <h3 class="info__titulo">Ningun mensaje fue encontrado</h3>
+                <p class="info__descripcion">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>

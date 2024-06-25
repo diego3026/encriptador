@@ -1,0 +1,144 @@
+:root{
+    --dark-blue-100:#609ED4;
+    --dark-blue-200:#356EA9;
+    --dark-blue-300:#0A3871;
+    --dark-blue-400:#072B61;
+    --dark-blue-500:#052051;
+    --light-blue-100:#F3F5FC;
+    --light-blue-200:#EFF1FA;
+    --light-blue-300:#E9ECF8;
+    --light-blue-400:#AAB2D5;
+    --light-blue-500:#757FB2;
+    --gray-100:#CED4DA;
+    --gray-200:#ADB5BD;
+    --gray-300:#868E96;
+    --gray-400:#495057;
+    --gray-500:#343A40;
+    --white:#FFFFFF;   
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--light-blue-100);
+}
+
+.header{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    gap: 30px;
+    margin-top: 25px;
+    height: calc(90vh - 10vh - 25px);
+    justify-content: center;
+}
+
+.encriptador{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.encriptador__texto{
+    border: 0;
+    color: var(--dark-blue-300);
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: x-large;
+    outline: none;
+}
+
+.encriptador__texto::placeholder{
+    color: var(--dark-blue-300);
+}
+
+.encriptador__botones{
+    display: flex;
+    flex-direction: column;    
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.boton{
+    width: 25%;
+    padding: 2% 0;
+    border-radius: 15px;
+    border: 0;
+    background-color: var(--dark-blue-300);
+    color: var(--white);
+}
+
+.btn--active {
+    border: 1px solid var(--dark-blue-300);
+    background-color: #D8DFE8;
+    color: var(--dark-blue-300);
+}
+
+.minusculas{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.contenedor__icono{
+    background-color: #65747D;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.minusculas__icono{
+    border-radius: 50%;
+    color: white;
+}
+
+.minusculas__info{
+    color: var(--gray-400);
+}
+
+.mensajes {
+    width: 21%;
+    background: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px -7px var(--gray-100);
+}
+
+.mensajes__imagen{
+    width: 75%;
+}
+
+.info__titulo, .info__descripcion{
+    padding: 0;
+    margin: 0;
+}
+
+.mensajes__info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
