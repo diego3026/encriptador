@@ -1,0 +1,50 @@
+
+@media (max-width: 768px){
+    .contenedor{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        height: calc(100vh - 10vh);
+    }
+
+    .encriptador{
+        width: 90vw;
+        height: 70%;
+    }
+
+    .boton{
+        width: 45%;
+    }
+
+    .mensajes{
+        width: 90vw;
+        padding: 15px 0;
+    }
+
+    .mensajes__info{
+        gap: 10px;
+    }
+    
+    .mensajes__imagen{
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .encriptador__texto {
+        font-size: larger;
+    }
+
+    .mensajes{
+        width: 80vw;
+    }
+
+    .mensajes__info{
+        padding: 0 5px;
+    }
+
+    .info__titulo, .info__descripcion {
+        font-size: medium;
+    }
+}

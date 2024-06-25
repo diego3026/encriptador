@@ -142,3 +142,37 @@ body {
     flex-direction: column;
     gap: 20px;
 }
+
+.mensaje{
+    color: var(--gray-400);
+    height: 90%;
+    display: none;
+}
+
+.contenedor__boton{
+    width: 100%;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.boton--copiar{
+    width: 80%;
+    border-radius: 20px;
+    background:transparent;
+    border: 1px solid var(--dark-blue-300);
+    color: var(--dark-blue-300);
+    padding: 15px 0;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.boton--copiar:hover {
+    cursor: pointer;
+}
+
+.mensaje > #text {
+    width: 50%;
+}

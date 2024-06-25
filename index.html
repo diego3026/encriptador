@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Diego Oñate">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Encriptador</title>
     <script src="https://kit.fontawesome.com/80ca2c1d88.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </head>
 <body>
     <header class="header">
@@ -23,8 +25,8 @@
                     <p class="minusculas__info">Solo letras minúsculas y sin acentos</p>
                 </div>
                 <div class="botones">
-                    <input class="boton" type="button" value="Encriptar">
-                    <input class="boton btn--active" type="button" value="Desencriptar">
+                    <input class="boton" onclick="encriptar()" type="button" value="Encriptar">
+                    <input class="boton btn--active" onclick="desencriptar()" type="button" value="Desencriptar">
                 </div>
             </div>
         </section>
@@ -33,6 +35,10 @@
             <div class="mensajes__info">
                 <h3 class="info__titulo">Ningun mensaje fue encontrado</h3>
                 <p class="info__descripcion">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="mensaje"></div>
+            <div class="contenedor__boton">
+                <input type="button" onclick="copiar()" class="boton--copiar" value="Copiar">
             </div>
         </aside>
     </div>
